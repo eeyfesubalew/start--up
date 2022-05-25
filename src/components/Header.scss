@@ -5,6 +5,7 @@
   background-position: bottom;
   height: 100vh;
   padding: 2.5rem;
+  z-index: -99;
 }
 
 .nav-container {
@@ -155,7 +156,8 @@
 .hero-img {
   width: 100%;
   object-fit: cover;
-  animation: img 1s ease-in 1s both;
+  animation: img 1s ease-in 0.5s both;
+  z-index: 10;
 }
 @keyframes img {
   0% {

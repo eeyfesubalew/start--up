@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+.about-section {
+  padding: 15rem 20rem;
+}
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6.5rem;
+}
+
+.brand {
+  opacity: 0.5;
+  transition: all 0.5s;
+  padding: 0 1.5rem;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.text-container {
+  padding: 3.5rem 4.5rem;
+  text-align: center;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fe8464;
+    height: 5px;
+    width: 30%;
+  }
+}
+
+.about-primary {
+  font-size: 3.5rem;
+  font-weight: 500;
+  // letter-spacing: 1;
+}
+.about-secondary {
+  font-size: 3rem;
+}
+
+.card-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  .card {
+    padding: 5.5rem 2rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 30px 0 rgba(145, 140, 140, 0.16);
+    &-list {
+      padding: 1.5rem;
+    }
+    &:hover {
+      cursor: pointer;
+      border: 2px solid #fe8464;
+    }
+  }
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.card-desc {
+  font-size: 1.5rem;
+  color: #6a6972;
+}
+
+.card-link {
+  color: #2e2e2e;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
