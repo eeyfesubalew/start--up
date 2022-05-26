@@ -1,0 +1,73 @@
+.about-sec {
+  padding: 1rem 10rem;
+  background-image: url("../assets/about-shape-1.svg");
+  background-position: top;
+  // height: 50rem;
+  background-size: cover;
+  // border: 1px solid orangered;
+}
+
+.ab-sec-container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+.ab-title {
+  // font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+.ab-title-big {
+  font-size: 3.5rem;
+}
+.ab-title-small {
+  font-size: 2.5rem;
+  color: #7b7a7a;
+}
+.ab-sec {
+}
+.ab-desc {
+  font-size: 1.5rem;
+  margin-bottom: 2.3rem;
+  color: #6a6972;
+}
+.ab-btn {
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    #fe8464 0%,
+    #fe6e9a 50%,
+    #fe8464 100%
+  );
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+}
+
+.ab-img {
+  width: 100%;
+  object-fit: contain;
+}
+.ab-sec-one {
+  position: relative;
+  padding: 3.5rem 1.5rem;
+}
+.ab-sec-two {
+  padding: 0;
+}
+.ab-sec-one::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 20%;
+  transform: translate(-50%, 0);
+  background-color: #fe8464;
+  height: 5px;
+  width: 30%;
+}
+
+.ab-sec-one-right {
+  margin-left: 2rem;
+}

@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import heroimg from "../assets/header-hero.png";
 import "./Header.scss";
 import About from "./About";
+import AboutSection from "./About-section";
 const Header = () => {
   return (
     <Fragment>
@@ -53,6 +54,7 @@ const Header = () => {
       </header>
       <main>
         <About />
+        <AboutSection />
       </main>
     </Fragment>
   );
