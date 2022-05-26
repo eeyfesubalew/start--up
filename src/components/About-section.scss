@@ -24,8 +24,6 @@
   font-size: 2.5rem;
   color: #7b7a7a;
 }
-.ab-sec {
-}
 .ab-desc {
   font-size: 1.5rem;
   margin-bottom: 2.3rem;
@@ -70,4 +68,73 @@
 
 .ab-sec-one-right {
   margin-left: 2rem;
+}
+
+.ab-dots {
+  position: absolute;
+  left: -3rem;
+  bottom: -3rem;
+  z-index: -88;
+  width: 50%;
+}
+.ab-video {
+  position: absolute;
+  top: 0%;
+  right: 0;
+
+  height: 80%;
+}
+
+.ab-sec {
+  position: relative;
+}
+.ab-sec-video {
+  height: 40rem;
+  background-image: url("../assets/video.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.ab-shapes {
+  display: flex;
+  padding: 1rem 2.5rem;
+}
+
+.ab-shape {
+  padding: 2.5rem;
+  height: 10rem;
+  width: 12rem;
+  transform: rotate(-45deg);
+  border-radius: 10rem;
+  // align-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  // justify-content: center;
+  margin-right: 4.5rem;
+  &-1 {
+    background-image: linear-gradient(#33c8c1 0%, #119bd2 100%);
+  }
+  &-2 {
+    background-image: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  }
+  &-3 {
+    background-image: linear-gradient(#361cc1 0%, #2e82ef 100%);
+  }
+}
+
+.ab-down {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1;
+  transform: rotate(45deg);
+  margin-left: -3rem;
+  margin-top: -1rem;
+}
+
+.ab-amount {
+  transform: rotate(45deg);
+  display: block;
 }
