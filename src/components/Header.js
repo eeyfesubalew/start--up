@@ -4,6 +4,8 @@ import heroimg from "../assets/header-hero.png";
 import "./Header.scss";
 import About from "./About";
 import AboutSection from "./About-section";
+import Team from "./Team";
+import Testemonial from "./Testemonial";
 const Header = () => {
   return (
     <Fragment>
@@ -56,6 +58,8 @@ const Header = () => {
         <About />
         <AboutSection />
       </main>
+      <Team />
+      <Testemonial />
     </Fragment>
   );
 };
