@@ -6,6 +6,7 @@ import About from "./About";
 import AboutSection from "./About-section";
 import Team from "./Team";
 import Testemonial from "./Testemonial";
+import Blog from "./blog";
 const Header = () => {
   return (
     <Fragment>
@@ -60,6 +61,7 @@ const Header = () => {
       </main>
       <Team />
       <Testemonial />
+      <Blog />
     </Fragment>
   );
 };
