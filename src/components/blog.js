@@ -5,6 +5,7 @@ import blog3 from "../assets/blog-3.jpg";
 import { useState } from "react";
 const blogState = [
   {
+    id: "b1",
     img: blog1,
     postedBy: "Admin",
     postedDate: "03 June 2022",
@@ -12,6 +13,7 @@ const blogState = [
       "Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod temporinvidunt labore.",
   },
   {
+    id: "b2",
     img: blog2,
     postedBy: "Admin",
     postedDate: "03 June 2022",
@@ -19,6 +21,7 @@ const blogState = [
       "Lorem ipsuamet conset sadips cing elitr seddiam nonu eirmod temporinvidunt labore.",
   },
   {
+    id: "b3",
     img: blog3,
     postedBy: "Admin",
     postedDate: "03 June 2022",
@@ -39,7 +42,7 @@ const Blog = () => {
       <div className="blog-container">
         {blgState.map((blog) => {
           return (
-            <div className="blog">
+            <div className="blog" key={blog.id}>
               <div className="blog-img-cont">
                 <img src={blog.img} className="blog-img" />
               </div>
